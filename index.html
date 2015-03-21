@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <style type="text/css">
+
+path.arc {
+  cursor: move;
+  fill: #fff;
+}
+
+.node {
+  font-size: 12px;
+}
+
+.node:hover {
+  fill: #d62728;
+  .node:not(:hover){
+   opacity: 0.2
+  }
+}
+
+.link {
+  fill: none;
+  stroke: #8B8970;
+  stroke-opacity: 0.1;
+  stroke-width: 0.5px;
+  pointer-events: none;
+}
+
+.link.source, .link.target {
+  stroke-opacity: 0.7;
+  stroke-width: 0.5px;
+}
+
+.node.target, .node.source {
+  fill: #000;
+}
+
+.node.hub {
+  stroke: #780478;
+  stroke-width: 2px;
+}
+
+.link.source {
+  stroke: #d62728;
+}
+
+.link.target {
+  stroke: #d62728;
+}
+
+#vis3d {
+	background-color:#000000; 
+	width: 400px; 
+	height: 400px;
+/*	top: 300px;*/
+	left:-150px;
+}
+	</style>
+  </head>
+  <body>
+
+</div>
+    <script type="text/javascript" src="d3.js"></script>
+    <script type="text/javascript" src="d3.layout.js"></script>
+	<script type="text/javascript" src="network.js"></script>
+	
+	
+  </body>
+</html>
